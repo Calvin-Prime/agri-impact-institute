@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+/* In the new Tailwind update, we define custom fonts right here in the CSS! */
+@theme {
+  --font-inter: "Inter", sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
