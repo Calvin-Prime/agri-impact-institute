@@ -16,9 +16,8 @@ export default function Navbar() {
         {/* Polished, Vectorized Firm Logo for the Institute */}
         <div className="w-auto h-12 flex items-center justify-center p-1 border border-slate-100 rounded-sm hover:border-emerald-200 transition cursor-pointer">
           <img src={logoFile} alt="Agri-Impact Limited | Institute" className="h-full w-auto object-contain" />
-        }
         </div>
-        <span className="font-semibold text-lg tracking-tight text-emerald-900 uppercase">Institute</span>
+        <span className="font-semibold text-lg tracking-tight text-emerald-900 uppercase">Agri-Impact Institute</span>
       </div>
       
       {/* Sleek, Center Navigation with Hover/Active States */}
