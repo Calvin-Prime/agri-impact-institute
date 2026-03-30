@@ -46,7 +46,8 @@ export default function MainContent() {
         <aside className="space-y-8">
           <ProgramAssistant />
           
-          <div className="bg-white border border-slate-200 p-8 shadow-sm">
+          {/* Notice how the id="enroll" is just added to the opening tag of the box below */}
+          <div id="enroll" className="bg-white border border-slate-200 p-8 shadow-sm">
             <h3 className="text-xl font-bold text-emerald-900 mb-4 uppercase text-sm tracking-widest">Enrollment Status</h3>
             <p className="text-slate-600 mb-6 text-sm">Applications for the Summer 2026 Cohort are now open.</p>
             <div className="space-y-4">
@@ -59,7 +60,7 @@ export default function MainContent() {
                     <span className="font-bold text-emerald-900">May 15, 2026</span>
                 </div>
             </div>
-            <button className="w-full bg-emerald-800 text-white font-bold py-4 mt-8 hover:bg-emerald-900 transition tracking-widest text-xs uppercase">Start Application</button>
+            <button className="w-full bg-emerald-800 text-white font-bold py-4 mt-8 hover:bg-emerald-900 transition tracking-widest text-xs uppercase cursor-pointer">Start Application</button>
           </div>
         </aside>
 

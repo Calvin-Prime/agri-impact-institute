@@ -9,11 +9,20 @@ export default function Navbar() {
         <span className="font-bold text-xl tracking-tight text-emerald-900 uppercase">Institute</span>
       </div>
       <div className="hidden md:flex gap-8 font-medium text-sm text-slate-600 uppercase tracking-widest">
-        <a href="#" className="hover:text-emerald-700 transition">Programs</a>
-        <a href="#" className="hover:text-emerald-700 transition">Partnerships</a>
-        <a href="#" className="hover:text-emerald-700 transition">Insights</a>
-      </div>
-      <button className="bg-emerald-800 text-white px-6 py-2 rounded-sm text-sm font-semibold hover:bg-emerald-900 transition uppercase tracking-widest">
+  <button onClick={() => document.getElementById('details').scrollIntoView({ behavior: 'smooth' })} className="hover:text-emerald-700 transition cursor-pointer">
+    Programs
+  </button>
+  <button onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })} className="hover:text-emerald-700 transition cursor-pointer">
+    Partnerships
+  </button>
+  <button onClick={() => document.getElementById('careers').scrollIntoView({ behavior: 'smooth' })} className="hover:text-emerald-700 transition cursor-pointer">
+    Insights
+  </button>
+</div>
+<button 
+  onClick={() => document.getElementById('enroll').scrollIntoView({ behavior: 'smooth' })}
+  className="bg-emerald-800 text-white px-6 py-2 rounded-sm text-sm font-semibold hover:bg-emerald-900 transition uppercase tracking-widest cursor-pointer"
+>
         Enroll Now
       </button>
     </nav>

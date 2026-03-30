@@ -8,12 +8,23 @@ export default function Hero() {
       <h1 className="text-5xl md:text-7xl mb-6 max-w-4xl font-serif">Transforming Global Food Systems Through Executive Education</h1>
       <p className="text-xl text-slate-300 max-w-2xl mb-8">Join a global cohort of government leaders and private sector executives driving the next green revolution.</p>
       <div className="flex gap-4">
-        <button className="bg-white text-emerald-900 px-8 py-4 font-bold hover:bg-emerald-50 transition uppercase tracking-widest text-xs">
+        
+        {/* Updated View Courses Button */}
+        <button 
+          onClick={() => document.getElementById('details').scrollIntoView({ behavior: 'smooth' })}
+          className="bg-white text-emerald-900 px-8 py-4 font-bold hover:bg-emerald-50 transition uppercase tracking-widest text-xs cursor-pointer"
+        >
           View Courses
         </button>
-        <button className="bg-emerald-500 text-white px-8 py-4 font-bold hover:bg-emerald-600 transition uppercase tracking-widest text-xs shadow-lg flex items-center gap-2">
+
+        {/* Updated AI Advisor Button */}
+        <button 
+          onClick={() => document.getElementById('ai-consultant').scrollIntoView({ behavior: 'smooth' })}
+          className="bg-emerald-500 text-white px-8 py-4 font-bold hover:bg-emerald-600 transition uppercase tracking-widest text-xs shadow-lg flex items-center gap-2 cursor-pointer"
+        >
           ✨ Consult AI Advisor
         </button>
+
       </div>
     </header>
   );
